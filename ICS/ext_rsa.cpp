@@ -28,18 +28,7 @@ double find_e(double phi)
 	return i;
 }
 
-double find_d(double e,double phi)
-{
-	double i=1;
-
-	while(floor((phi*i+1)/e) != ceil((phi*i+1)/e))
-	{
-		//cout<<"compare"<<floor((phi*i+1)/e)<<"<->"<<ceil((phi*i+1)/e)<<endl;
-		i++;
-	}
-
-	return (phi*i+1)/e;
-}
+double find_d()
 
 int main(int argc, char const *argv[])
 {
@@ -51,6 +40,7 @@ int main(int argc, char const *argv[])
 
 	double e = find_e(phi);  cout<<e<<endl;
 	
+
 
 	return 0;
 }
